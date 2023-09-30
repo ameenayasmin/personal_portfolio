@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primarycolor:#12b9fa;
+    --dark:#1b1f24;
+    --btn-primary-hover:#0780af;
+
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body{
+    color: var(--primarycolor);
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    color: var(--primarycolor);
+    font-weight: 600;
+    letter-spacing:1px;
+    text-transform: uppercase;
+}
+.header-wrapper{
+    background-color: var(--dark);
+}
+header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100%;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    
+}
+header ul li {
+    
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+}
+header ul li a:hover{
+    color: var(--primarycolor);
+}
+
+/* Hero section home page */
+.hero-section{
+    display: flex;
+    background-color: var(--dark);
+    color: #fff;
+    align-items: center;
+    padding: 20px 150px 0px 150px;
+}
+.herosec-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+.herosec-desc{
+    color: azure;
+    font-size: 16px;
+}
+.herosec-socialicons{
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0px;
+  
+}
+.herosec-socialicons li> a{
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+ 
+}
+.hero-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin:15px 20px 15px 0px;
+   
+}
+.main-wrapper{
+    background-color: var(--dark);
+} 
+ /*buttons  */
+ .outlinedbtn{
+    padding: 10px 20px;
+    border-radius:5px;
+    background-color: transparent;
+    border:1px solid var(--primarycolor);
+    color: var(--primarycolor);
+}
+.outlinedbtn:hover{
+    background-color: var(--primarycolor);
+    color: var(--dark) !important;
+}
+.outlinedbtn a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primarycolor);
+
+    
+}
+.outlinedbtn:hover a{
+    color: var(--dark);
+}
+.hero-btn .outlinedbtn{
+    color:var(--primarycolor);
+    font-weight:600;
+    cursor: pointer;
+}
+.hero-btn.outlinedbtn:hover{
+    background-color: var(--primarycolor);
+  
+}
+.hero-btn.outlinedbtn:hover a{
+    color: var(--dark);
+
+}
+
+
+ .hero-btn-primary{
+    background-color: var(--primarycolor);
+    color:azure;
+    border: none;
+    font-weight:600;
+}
+.hero-btn-primary:hover{
+    background-color: var(--btn-primary-hover);
+    transition: 0.5s all;
+}
